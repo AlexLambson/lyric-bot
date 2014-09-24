@@ -1,0 +1,14 @@
+C:\Users\Alex\Desktop\lyricbot\lyricbot\lyricbot\bin\Debug\lyricbot.exe
+C:\Users\Alex\Desktop\lyricbot\lyricbot\lyricbot\bin\Debug\lyricbot.pdb
+C:\Users\Alex\Desktop\lyricbot\lyricbot\lyricbot\obj\Debug\lyricbot.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Desktop\lyricbot\lyricbot\lyricbot\obj\Debug\lyricbot.Properties.Resources.resources
+C:\Users\Alex\Desktop\lyricbot\lyricbot\lyricbot\obj\Debug\lyricbot.csproj.GenerateResource.Cache
+C:\Users\Alex\Desktop\lyricbot\lyricbot\lyricbot\obj\Debug\lyricbot.exe
+C:\Users\Alex\Desktop\lyricbot\lyricbot\lyricbot\obj\Debug\lyricbot.pdb
+C:\Users\Alex\Desktop\lyricbot\lyricbot\lyricbot\bin\Debug\Id3.dll
+C:\Users\Alex\Desktop\lyricbot\lyricbot\lyricbot\bin\Debug\Id3.Files.dll
+C:\Users\Alex\Desktop\lyricbot\lyricbot\lyricbot\bin\Debug\Id3.WinForms.dll
+C:\Users\Alex\Desktop\lyricbot\lyricbot\lyricbot\bin\Debug\Id3.pdb
+C:\Users\Alex\Desktop\lyricbot\lyricbot\lyricbot\bin\Debug\Id3.Files.pdb
+C:\Users\Alex\Desktop\lyricbot\lyricbot\lyricbot\bin\Debug\Id3.WinForms.pdb
+C:\Users\Alex\Desktop\lyricbot\lyricbot\lyricbot\obj\Debug\lyricbot.lyricBot.resources

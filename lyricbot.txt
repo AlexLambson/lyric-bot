@@ -1,0 +1,6 @@
+Lyric bot:
+
+A-Z lyrics stores their sites as such. 
+
+www.azlyrics.com/lyrics/[band name all lower case strip special]/[song name stripped lower case].html
+
