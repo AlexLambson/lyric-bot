@@ -96,7 +96,21 @@ namespace lyricbot
                     string lyrics = file.Tag.Lyrics;
                     if (true)//lyrics == null || lyrics.Length < 1)
                     {
-                        var returnedHTML = downloadLyricsHTML(parseSongToAZLyricsURL(artist, title));
+                        List<string> links = new List<string>();
+                        links.Add(parseSongToAZLyricsURL(artist, title));
+                        links.Add(parseSongToPLyricsURL(artist, title));
+                        Tuple<String, bool> returnedHTML = new Tuple<string,bool>("", false);
+
+                        foreach(string link in links){
+                            Console.WriteLine("Trying URL:   {0}", link);
+                            var temp = downloadLyricsHTML(link);
+                            if (temp.Item2)
+                            {
+                                returnedHTML = temp;
+                                break;
+                            }
+                        }
+
                         if (returnedHTML.Item2)
                         {
                             lyrics = returnedHTML.Item1;

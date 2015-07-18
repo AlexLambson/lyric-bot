@@ -19,6 +19,16 @@ namespace lyricbot
             Song = cleanStringForURL(Song).Replace(" ", "");
             return "http://www.azlyrics.com/lyrics/" + Artist + "/" + Song + ".html";
         }
+        public string parseSongToPLyricsURL(string Artist, string Song)
+        {
+            /// AZ Lyrics uses the url as follows
+            /// azlyrics.com/lyrics/{Artist lower case}/{Song lower case}.html
+            /// all white space and punctuation must be removed
+            /// AZ lyrics does NOT use "A" or "The" at the beginning of artist names
+            Artist = cleanStringForURL(Artist, true).Replace(" ", "");
+            Song = cleanStringForURL(Song).Replace(" ", "");
+            return "http://www.plyrics.com/lyrics/" + Artist + "/" + Song + ".html";
+        }
         public string fixSwearing(string bleeped)
         {
             Console.WriteLine(bleeped);
