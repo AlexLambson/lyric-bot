@@ -88,7 +88,7 @@ namespace lyricbot
             int lyricsEnd = rawHTML.IndexOf("<!-- end of lyrics -->");
             int lyricsLength = lyricsEnd - lyricsStart;
             extractedLyrics = rawHTML.Substring(lyricsStart, lyricsLength);
-            parsedHTML = extractedLyrics.Replace("<br />", "\r\n");
+            parsedHTML = extractedLyrics.Replace("<br />", "\r");
             return parsedHTML;
         }
     }

@@ -84,7 +84,7 @@ namespace lyricbot
                     //}
                     #endregion
 
-                    if (!song.Contains(".mp3")) {
+                    if (!song.Contains(".mp3") && !song.Contains(".m4a")) {
                         string Warning = "{0} :    Is not an MP3\r\n";
                         Warning = String.Format(Warning, song);
                         textToDisplay += Warning;
@@ -97,7 +97,7 @@ namespace lyricbot
                     if (true)//lyrics == null || lyrics.Length < 1)
                     {
                         List<string> links = new List<string>();
-                        links.Add(parseSongToAZLyricsURL(artist, title));
+                        //links.Add(parseSongToAZLyricsURL(artist, title));
                         links.Add(parseSongToPLyricsURL(artist, title));
                         Tuple<String, bool> returnedHTML = new Tuple<string,bool>("", false);
 
