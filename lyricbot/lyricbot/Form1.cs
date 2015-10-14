@@ -98,6 +98,11 @@ namespace lyricbot
                     {
                         List<string> links = new List<string>();
                         //links.Add(parseSongToAZLyricsURL(artist, title));
+
+                        /*
+                         * TODO: make anything after a "[" or "{" disappear
+                         */
+
                         links.Add(parseSongToPLyricsURL(artist, title));
                         Tuple<String, bool> returnedHTML = new Tuple<string,bool>("", false);
 
