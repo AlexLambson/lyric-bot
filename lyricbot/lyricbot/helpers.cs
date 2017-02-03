@@ -25,6 +25,9 @@ namespace lyricbot
             /// azlyrics.com/lyrics/{Artist lower case}/{Song lower case}.html
             /// all white space and punctuation must be removed
             /// AZ lyrics does NOT use "A" or "The" at the beginning of artist names
+            if (Artist == "Destroy Rebuild Until God Shows"){
+                Artist = "drugs";
+            }
             Artist = cleanStringForURL(Artist, true).Replace(" ", "");
             Song = cleanStringForURL(Song).Replace(" ", "");
             return "http://www.plyrics.com/lyrics/" + Artist + "/" + Song + ".html";
@@ -38,6 +41,7 @@ namespace lyricbot
         {
             cleanerInput = fixSwearing(cleanerInput.ToLower());
             string stripped = Regex.Replace(cleanerInput, "\\p{P}", "");
+            stripped = stripped.Replace("[explicit]", "");
             //stripped = stripped.ToLower();
             if (removePretense)
             {
